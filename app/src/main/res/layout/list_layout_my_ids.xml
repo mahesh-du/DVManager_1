@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/outer_list_layout_entry_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#2196F3">
+
+            <ImageView
+                android:id="@+id/list_layout_my_ids_profile_picture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="5dp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/txt_list_layout_my_Ids_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="16"
+                android:maxEms="16"
+                android:padding="10dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:animateLayoutChanges="true"
+            android:id="@+id/inner_list_layout_my_Ids_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name:"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:minEms="6"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/txt_list_layout_my_Ids_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="none"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age:"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:minEms="6"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/txt_list_layout_my_Ids_Age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender:"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:minEms="6"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/txt_list_layout_my_Ids_Gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="none"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:minEms="6"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/txt_list_layout_my_Ids_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="none"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone No:"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:minEms="6"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/txt_list_layout_my_Ids_Phone_No"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00000 00000"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admission No:"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:minEms="6"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/txt_list_layout_my_Ids_Admission_No"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address:"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:minEms="6"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/txt_list_layout_my_Ids_Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="none"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ffffff"/>
+
+</LinearLayout>

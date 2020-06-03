@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bn_add"
+        android:icon="@drawable/ic_add_white_24dp"
+        android:title="@string/menu_add" />
+    <item
+        android:id="@+id/bn_analysis"
+        android:icon="@drawable/ic_analysis_black_24dp"
+        android:title="@string/menu_analysis" />
+    <item
+        android:id="@+id/bn_home"
+        android:icon="@drawable/ic_home_white_24dp"
+        android:title="@string/menu_home" />
+    <item
+        android:id="@+id/bn_alert"
+        android:icon="@drawable/ic_alert_white_24dp"
+        android:title="@string/menu_alert"
+        android:iconTint="#ffffff"/>
+    <item
+        android:id="@+id/bn_Search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/menu_search" />
+</menu>

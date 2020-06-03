@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--TODO: margin is hardcoded to make checkbox vertically center.-->
+        <CheckBox
+            android:id="@+id/layout_filter_data_By_Device_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:checked="false"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#969494"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/layout_filter_data_By_Device_outer_linearLayout">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="Device: "
+                                android:textAlignment="viewStart"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse" />
+
+                            <TextView
+                                android:id="@+id/txt_layout_filter_data_By_Device_Device_Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:animateLayoutChanges="true"
+                        android:id="@+id/layout_filter_data_By_Device_linearLayout"
+                        android:visibility="visible"
+                        android:background="#D8D1D1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp">
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="Blocked: " />
+
+                                <TextView
+                                    android:id="@+id/txt_layout_filter_data_By_Device_blocked"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="5dp"
+                                    android:text="No"
+                                    android:textAlignment="viewStart"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="Scans Today:" />
+
+                                <TextView
+                                    android:id="@+id/txt_layout_filter_data_By_Device_scans_today"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="5dp"
+                                    android:text="0"
+                                    android:textAlignment="viewStart"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="Logged In:" />
+
+                                <TextView
+                                    android:id="@+id/txt_layout_filter_data_By_Device_logged_in"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="5dp"
+                                    android:text="No"
+                                    android:textAlignment="viewStart"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="Logged In Email:" />
+
+                                <TextView
+                                    android:id="@+id/txt_layout_filter_data_By_Device_logged_in_email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="5dp"
+                                    android:text="abc@gmail.com"
+                                    android:textAlignment="viewStart"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Battery Left: "
+                                    android:padding="5dp"/>
+
+                                <TextView
+                                    android:id="@+id/txt_layout_filter_data_By_Device_battery_remaining"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="5dp"
+                                    android:text="0"
+                                    android:textAlignment="viewStart"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Battery Status: "
+                                    android:padding="5dp"/>
+
+                                <TextView
+                                    android:id="@+id/txt_layout_filter_data_By_Device_battery_status"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="5dp"
+                                    android:text="Discharging"
+                                    android:textAlignment="viewStart"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Network Status: "
+                                    android:padding="5dp"/>
+
+                                <TextView
+                                    android:id="@+id/txt_layout_filter_data_By_Device_network_status"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="5dp"
+                                    android:text="Offline"
+                                    android:textAlignment="viewStart"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="Actual Location: " />
+
+                                <TextView
+                                    android:id="@+id/txt_layout_filter_data_By_Device_actual_position"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="5dp"
+                                    android:text="Gate 0"
+                                    android:textAlignment="viewStart"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="GPS Location: " />
+
+                                <TextView
+                                    android:id="@+id/txt_layout_filter_data_By_Device_gps_location"
+                                    android:layout_width="217dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="5dp"
+                                    android:text="0,0"
+                                    android:textAlignment="viewStart"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:padding="10dp"
+                android:text="Filter Data"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse" />
+
+            <LinearLayout
+                android:animateLayoutChanges="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/layout_filter_data_By_Id_checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="By Id"
+                    android:textSize="20dp"
+                    android:checked="true"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_filter_data_By_Id_Linear_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_Id"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:inputType="text"
+                        android:clickable="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tiet_Id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Search"
+                            android:inputType="text"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/layout_filter_data_By_Id_recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/layout_filter_data_By_Date_checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="By Date"
+                    android:textSize="20dp"
+                    android:checked="false"
+                    android:paddingVertical="5dp"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_filter_data_By_Date_Linear_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_start_Date"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:inputType="none"
+                            android:clickable="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/tiet_start_Date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Start Date (dd/mm/yyyy)"
+                                android:inputType="none"
+                                android:clickable="true"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_end_Date"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/tiet_end_Date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="End Date (dd/mm/yyyy)"
+                                android:inputType="date" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/layout_filter_data_By_Device_checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="By Device"
+                    android:textSize="20dp"
+                    android:checked="false"
+                    android:paddingVertical="5dp"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_filter_data_Device_Linear_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <CheckBox
+                            android:id="@+id/layout_filter_data_By_Device_entry_checkBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Entry"
+                            android:textSize="18dp"
+                            android:layout_marginEnd="100dp"
+                            android:checked="false"/>
+                        <CheckBox
+                            android:id="@+id/layout_filter_data_By_Device_exit_checkBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Exit"
+                            android:textSize="18dp"
+                            android:checked="false"/>
+
+                    </LinearLayout>
+
+                    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                        android:id="@+id/layout_filter_data_By_Device_swipeRefreshLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:visibility="visible">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/layout_filter_data_By_Device_recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:visibility="visible"/>
+
+                    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

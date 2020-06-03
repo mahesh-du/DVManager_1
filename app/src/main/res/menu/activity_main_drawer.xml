@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+          <item
+            android:id="@+id/nav_add"
+            android:icon="@drawable/ic_add_black_24dp"
+            android:title="@string/menu_add" />
+        <item
+            android:id="@+id/nav_analysis"
+            android:icon="@drawable/ic_analysis_black_24dp"
+            android:title="@string/menu_analysis" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_alert"
+            android:icon="@drawable/ic_alert_black_24dp"
+            android:title="@string/menu_alert" />
+        <item
+            android:id="@+id/nav_Search"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="@string/menu_search" />
+
+       <item
+           android:id="@+id/nav_Manage_devices"
+           android:icon="@drawable/ic_manage_devices_black_24dp"
+           android:title="@string/menu_manage_devices" />
+       <item
+           android:id="@+id/nav_My_Ids"
+           android:icon="@drawable/ic_my_ids"
+           android:title="@string/menu_my_ids" />
+       <item
+           android:id="@+id/nav_my_profile"
+           android:icon="@drawable/ic_profile_blue_24dp"
+           android:title="My Profile" />
+    <item
+        android:id="@+id/nav_About"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/menu_about" />
+    <item
+        android:id="@+id/nav_Events"
+        android:icon="@drawable/events"
+        android:title="@string/menu_events" />
+    <item
+           android:id="@+id/nav_Log_Out"
+           android:icon="@drawable/ic_logout"
+           android:title="@string/menu_log_out" />
+
+</menu>
